@@ -1,9 +1,6 @@
 # Environment variables
 .env
 
-# File uploads (temporary storage)
-uploads/
-
 # Node.js dependencies
 node_modules/
 npm-debug.log*
