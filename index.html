@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnblockedGPT</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>UnblockedGPT</h1>
+        <p class="subtitle">ChatGPT but unblocked</p>
+        
+        <div class="chat-container">
+            <div id="chat-history" class="chat-history"></div>
+            
+            <div class="input-section">
+                <div class="image-preview-container" id="image-preview-container" style="display: none;"></div>
+                <div class="input-row">
+                    <textarea 
+                        id="user-input" 
+                        placeholder="Type your message here..."
+                        rows="3"
+                    ></textarea>
+                    <div class="input-buttons">
+                        <input type="file" id="image-input" accept="image/*" style="display: none;" />
+                        <button id="image-button" class="image-btn" title="Upload Image">📷</button>
+                        <button id="send-button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <span>Thinking...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
